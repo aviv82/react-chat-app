@@ -55,5 +55,3 @@ Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/
 ---
 
 <sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
-
-DATABASE_URL: postgres://piuvmsbbdhnjbx:8eccad234476dfc6787b773667cfe057408d1478a8838829282aba6472ffdf46@ec2-3-229-11-55.compute-1.amazonaws.com:5432/d6tn3b09fue25a
