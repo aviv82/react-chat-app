@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "messages",
+  "info": {
+    "singularName": "message",
+    "pluralName": "messages",
+    "displayName": "message"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "body": {
+      "type": "richtext"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "sentBy": {
+      "type": "string"
+    },
+    "sentTo": {
+      "type": "string"
+    },
+    "channel": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::channel.channel",
+      "inversedBy": "messages"
+    },
+    "chanter": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::chanter.chanter",
+      "inversedBy": "messages"
+    }
+  }
+}

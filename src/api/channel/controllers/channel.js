@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- *  bread controller
+ *  channel controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::bread.bread');
+module.exports = createCoreController('api::channel.channel');

@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * bread router.
+ * chanter router.
  */
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
 
-module.exports = createCoreRouter('api::bread.bread');
+module.exports = createCoreRouter('api::chanter.chanter');

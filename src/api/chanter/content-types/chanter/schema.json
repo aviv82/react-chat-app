@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "chanters",
+  "info": {
+    "singularName": "chanter",
+    "pluralName": "chanters",
+    "displayName": "chanter",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "userName": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "password": {
+      "type": "password",
+      "required": true,
+      "minLength": 4,
+      "maxLength": 20
+    },
+    "avatarUrl": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "channels": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::channel.channel",
+      "inversedBy": "chanters"
+    },
+    "messages": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::message.message",
+      "mappedBy": "chanter"
+    }
+  }
+}

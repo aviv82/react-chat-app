@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * bread service.
+ * channel service.
  */
 
 const { createCoreService } = require('@strapi/strapi').factories;
 
-module.exports = createCoreService('api::bread.bread');
+module.exports = createCoreService('api::channel.channel');
