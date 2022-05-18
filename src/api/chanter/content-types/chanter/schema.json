@@ -17,12 +17,6 @@
       "required": true,
       "unique": true
     },
-    "password": {
-      "type": "password",
-      "required": true,
-      "minLength": 4,
-      "maxLength": 20
-    },
     "avatarUrl": {
       "type": "media",
       "multiple": false,
@@ -50,6 +44,12 @@
       "type": "boolean",
       "default": false,
       "required": false
+    },
+    "password": {
+      "type": "string",
+      "required": true,
+      "maxLength": 20,
+      "minLength": 4
     }
   }
 }
