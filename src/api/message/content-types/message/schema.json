@@ -4,7 +4,8 @@
   "info": {
     "singularName": "message",
     "pluralName": "messages",
-    "displayName": "message"
+    "displayName": "message",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,14 +16,15 @@
       "type": "richtext"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "sentBy": {
       "type": "string"
@@ -41,6 +43,10 @@
       "relation": "manyToOne",
       "target": "api::chanter.chanter",
       "inversedBy": "messages"
+    },
+    "isUser": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
