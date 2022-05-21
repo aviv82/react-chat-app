@@ -26,12 +26,6 @@
         "audios"
       ]
     },
-    "sentBy": {
-      "type": "string"
-    },
-    "sentTo": {
-      "type": "string"
-    },
     "channel": {
       "type": "relation",
       "relation": "manyToOne",
@@ -47,6 +41,12 @@
     "isUser": {
       "type": "boolean",
       "default": false
+    },
+    "sentBy": {
+      "type": "integer"
+    },
+    "sentTo": {
+      "type": "integer"
     }
   }
 }
